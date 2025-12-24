@@ -110,7 +110,7 @@ class LearningAgent:
             api_key=github_token,
         )
         
-        self.model = "openai/gpt-4.1-mini"  # Fast, smart, affordable
+        self.model = "gpt-4o-mini"  # Fast, smart, affordable
         self.conversation_history: List[Dict[str, str]] = [
             {"role": "system", "content": LEARNING_AGENT_PROMPT}
         ]
