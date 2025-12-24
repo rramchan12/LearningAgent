@@ -65,7 +65,7 @@ Click "Sign in with GitHub" and authorize Streamlit.
 2. Fill in the form:
    - **Repository:** Select `your-username/cbse-learning-agent`
    - **Branch:** `main` (or `master`)
-   - **Main file path:** `streamlit_app.py`
+   - **Main file path:** `run_web.py`
 3. Click "Advanced settings" (optional)
    - Python version: 3.9 or 3.10
 
@@ -148,10 +148,12 @@ Streamlit Cloud detects changes and redeploys automatically!
   GITHUB_TOKEN = "ghp_..."
   ```
 
-### App won't start
+### App won't start / ModuleNotFoundError
+- **IMPORTANT:** Make sure Main file path is set to `run_web.py` (NOT `streamlit_app.py` or `web/app.py`)
 - Check "Manage app" → "Logs" to see errors
 - Make sure `requirements.txt` is complete
 - Verify Python version is 3.9 or 3.10
+- To fix: Go to app settings → Change "Main file path" to `run_web.py` → Reboot app
 
 ### Diagram generation fails
 - Check the "diagrams" folder is being created
