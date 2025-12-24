@@ -1,0 +1,15 @@
+# OpenAI SDK for GitHub Models
+openai>=1.0.0
+
+# Python environment
+python-dotenv
+
+# Diagram generation
+matplotlib>=3.3.0
+pillow>=8.0.0
+
+# Web interface
+streamlit>=1.28.0
+
+# Note: Microsoft Agent Framework requires Python 3.10+
+# This version uses OpenAI SDK directly for Python 3.9 compatibility
