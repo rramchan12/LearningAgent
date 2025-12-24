@@ -3,10 +3,15 @@ Streamlit Web Interface for CBSE Std 9 Learning Assistant
 Access from any browser - works on desktop, tablet, phone!
 """
 
+# Python path setup for Streamlit Cloud
+import sys
+from pathlib import Path
+if str(Path(__file__).parent.parent) not in sys.path:
+    sys.path.insert(0, str(Path(__file__).parent.parent))
+
 import streamlit as st
 import asyncio
 import os
-from pathlib import Path
 from PIL import Image
 import re
 
